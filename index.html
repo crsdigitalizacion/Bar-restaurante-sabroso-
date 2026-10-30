@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bar-Restaurante Sabroso</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Bar y restaurante en Logroño. Un pincho. Una mesa. Otro rato.">
+<meta name="theme-color" content="#242124">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bar-Restaurante Sabroso">
+<meta property="og:title" content="Bar-Restaurante Sabroso">
+<meta property="og:description" content="Bar y restaurante en Logroño. Un pincho. Una mesa. Otro rato.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Bar-Restaurante Sabroso", "telephone": "+34 941 64 14 20", "address": {"@type": "PostalAddress", "streetAddress": "Calle Duques de Nájera, 109, bajo 4", "postalCode": "26005", "addressLocality": "Logroño", "addressRegion": "La Rioja", "addressCountry": "ES"}, "image": "img/fachada-l.webp", "menu": "carta.html"}</script>
+<script>document.documentElement.classList.add("has-js");try{history.scrollRestoration="manual";if(!location.hash)window.scrollTo(0,0)}catch(e){}</script>
+<link rel="preload" as="image" href="img/tostas-s.webp" fetchpriority="low">
+<link rel="preload" as="image" href="img/montaditos-s.webp" fetchpriority="low">
+<link rel="preload" as="image" href="img/brochetas-s.webp" fetchpriority="low">
+<link rel="preload" as="image" href="img/sandwich-huevo-s.webp" fetchpriority="low">
+<link rel="preload" as="image" href="img/hero-m-l.webp" media="(max-width: 899px)" fetchpriority="high">
+<link rel="preload" as="image" imagesrcset="img/hero-d-s.webp 900w, img/hero-d-l.webp {DIMS["hero-d"][0]}w" imagesizes="100vw" media="(min-width: 900px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..700,0..100,0..1&family=Figtree:wght@400..800&display=swap">
+<link rel="stylesheet" href="site.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="site.js"></script><script>(function(){try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;if(sessionStorage.getItem("sb-intro"))return;sessionStorage.setItem("sb-intro","1");}catch(e){return;}
+var d=document.createElement("div");d.className="intro";d.setAttribute("aria-hidden","true");
+d.innerHTML='<div class="intro-in"><svg class="intro-motif" viewBox="0 0 64 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+"<path pathLength=\"1\" style=\"--d:0ms\" d=\"M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z\"/><path pathLength=\"1\" style=\"--d:220ms\" d=\"M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6\"/><path pathLength=\"1\" style=\"--d:440ms\" d=\"M33 30L41 4\"/><circle pathLength=\"1\" style=\"--d:560ms\" cx=\"41.8\" cy=\"2.6\" r=\"1.2\"/>"+'</g></svg><span class="intro-word">SABROSO</span></div>';
+document.documentElement.appendChild(d);setTimeout(function(){d.remove();},1900);})();</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+<p class="proposal"><b>Propuesta de diseño</b> · contenido por confirmar</p>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sabroso, inicio">SABROSO</a>
+    <div class="head-right">
+      <a class="btn btn-primary header-cta" href="reservas.html">Reservar</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-lbl">Menú</span><span class="menu-ico" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<div class="site-menu" id="site-menu" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+  <div class="sm-top wrap"><a class="brand" href="index.html">SABROSO</a><button class="sm-close" type="button" aria-label="Cerrar menú"><span class="menu-lbl">Cerrar</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="sm-body wrap">
+    <nav aria-label="Principal"><ol class="sm-list"><li style="--n:0"><a href="index.html" aria-current="page" data-photo="hero-d"><span class="mm-num">01</span><span class="mm-name">Inicio</span></a></li><li style="--n:1"><a href="carta.html" data-photo="tostas"><span class="mm-num">02</span><span class="mm-name">Carta</span></a></li><li style="--n:2"><a href="restaurante.html" data-photo="barra"><span class="mm-num">03</span><span class="mm-name">El restaurante</span></a></li><li style="--n:3"><a href="grupos.html" data-photo="mesa-grupo"><span class="mm-num">04</span><span class="mm-name">Grupos</span></a></li><li style="--n:4"><a href="reservas.html" data-photo="terraza"><span class="mm-num">05</span><span class="mm-name">Reservas</span></a></li></ol></nav>
+    <div class="sm-photo" aria-hidden="true"><img src="img/hero-d-s.webp" width="1447" height="712" alt="" loading="lazy" decoding="async" data-photo="hero-d" style="background:#EEE7DE url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoUAAoAPu1kqU2ppaQiMAgBMB2JYwCdABni4AWpagAA/i7hGCMybzQXinR0fGFjSiQvLI5Bwyk8CYxkJpGXZr1ueD0xli75FI5xI+xmSnrwo46KsEez8AAA) center/cover no-repeat" class="on"><img src="img/tostas-s.webp" width="1080" height="1440" alt="" loading="lazy" decoding="async" data-photo="tostas" style="background:#EEE7DE url(data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoPABQAPu1iqU2ppaOiMAgBMB2JbACdMoRwJoArkpwCTUC6zmIGHLbhoCAA/sFnwLSqsXrUhnXIqem3eONkFRnwWSiJmOQMi2u52ani8J5W9EhrSnWC5Tvmqlui7R+4N4/iymy86yh51FhXj0iD0bqW3HNzmtJmRwarLi/3E9uaCAwWTUCpKQLUgqbti6PHqe9jYKdGIAA=) center/cover no-repeat"><img src="img/barra-s.webp" width="1600" height="800" alt="" loading="lazy" decoding="async" data-photo="barra" style="background:#EEE7DE url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoUAAoAPu1iqk2ppaQiMAgBMB2JQBOgA6P/MvWAaV5EAAD+zFjMjvo/GhVKAh2Qt0nVHJcIjOTreb07BXDwN3hg/UT6mI+3TJTAKX5fSWGOGHGUbXNLFn4qXJlw8K6xn0FnMAAA) center/cover no-repeat"><img src="img/mesa-grupo-s.webp" width="1150" height="976" alt="" loading="lazy" decoding="async" data-photo="mesa-grupo" style="background:#EEE7DE url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoUABEAPu1sq1EppaOiqAqpMB2JQBWAAZ0GKPESxJ+tFd3lTfo3vrAA/j3cOUTYXx+gze4mFEmCVLvcFKcYbGg0FeF1LgpP4phg74MYaaog4t3+ceb1NcYt9IJlt64+s58zMjkh88eaEYljlcbAonIBWsGHyZc1Od2tFnyh2p2gGkhrYtIDvndzPUOnZAKAu2dQAA==) center/cover no-repeat"><img src="img/terraza-s.webp" width="1600" height="900" alt="" loading="lazy" decoding="async" data-photo="terraza" style="background:#EEE7DE url(data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOgBFKqKdP+Zass0npH4ADJYQQ5VMb30sFPN3sMjhB+Qw9AOcGCOC5D0+71Uy3EsVArG042g6K5iBGBt3Zx3cOfKLPY+vlr7Im4V2t+1QNfnAdDC2aQ8UbEbjKYkgAAAA==) center/cover no-repeat"></div>
+    <div class="sm-foot" style="--n:5"><svg class="motif " viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg><p>C. Duques de Nájera, 109 · Logroño<br><a href="tel:+34941641420">941 64 14 20</a></p></div>
+  </div>
+</div>
+<main id="main">
+<div class="lift">
+<section class="hero" aria-labelledby="t-hero">
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-media"><picture>
+    <source media="(max-width: 899px)" srcset="img/hero-m-l.webp" width="592" height="956">
+    <img src="img/hero-d-l.webp" srcset="img/hero-d-s.webp 900w, img/hero-d-l.webp 1447w" sizes="100vw" width="1447" height="712" alt="Fachada de Sabroso con el rótulo y la terraza acristalada llena de gente" fetchpriority="high" decoding="async" style="background:#EEE7DE url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoUAAoAPu1kqU2ppaQiMAgBMB2JYwCdABni4AWpagAA/i7hGCMybzQXinR0fGFjSiQvLI5Bwyk8CYxkJpGXZr1ueD0xli75FI5xI+xmSnrwo46KsEez8AAA) center/cover no-repeat">
+  </picture></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Bar y restaurante en Logroño</p>
+      <h1 class="hero-mark" id="t-hero" aria-label="Sabroso"><span aria-hidden="true">SABROSO</span></h1>
+      <p class="hero-line">Un pincho. Una mesa. Otro rato.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="carta.html">Ver la carta</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="pincho on-ivory lift-over" aria-labelledby="t-pincho">
+  <div class="wrap">
+    <div class="pincho-head"><svg class="motif pincho-motif" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg><h2 class="display pincho-title" id="t-pincho">Empezamos por un pincho.</h2></div>
+    <div class="deck" data-deck aria-roledescription="carrusel" aria-label="Pinchos de Sabroso">
+      <div class="deck-stage" tabindex="0" aria-label="Fotos de pinchos. Usa las flechas para cambiar.">
+        <figure class="deck-card" data-i="0" aria-label="1 de 4: Tostas de gulas y gambas"><div class="deck-ph"><img src="img/tostas-s.webp" srcset="img/tostas-s.webp 560w, img/tostas-l.webp 1080w" sizes="(min-width:900px) 300px, 68vw" width="1080" height="1440" alt="Tostas de gulas y gambas" decoding="async" style="background:#EEE7DE url(data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoPABQAPu1iqU2ppaOiMAgBMB2JbACdMoRwJoArkpwCTUC6zmIGHLbhoCAA/sFnwLSqsXrUhnXIqem3eONkFRnwWSiJmOQMi2u52ani8J5W9EhrSnWC5Tvmqlui7R+4N4/iymy86yh51FhXj0iD0bqW3HNzmtJmRwarLi/3E9uaCAwWTUCpKQLUgqbti6PHqe9jYKdGIAA=) center/cover no-repeat"></div><figcaption>Tostas de gulas y gambas</figcaption></figure><figure class="deck-card" data-i="1" aria-label="2 de 4: Montaditos de chorizo y huevo de codorniz"><div class="deck-ph"><img src="img/montaditos-s.webp" srcset="img/montaditos-s.webp 560w, img/montaditos-l.webp 1448w" sizes="(min-width:900px) 300px, 68vw" width="1448" height="1086" alt="Montaditos de chorizo y huevo de codorniz" decoding="async" style="background:#EEE7DE url(data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JYgCdMoMYA0g5a3CHzyOTMJjk8AD+os2+b3Zy3SoxngalDEa+XKEDF4gvjmV/K1NwSopmZ7Zmt1IpIhA22PXXOzfkuGC4Qiw7IlQeZ/kZwI/Jcy/HjS/ghRXg3b0tqwKZreYN+Nlj4lCAn+zuKo2JMvKU4HBJp54AAA==) center/cover no-repeat"></div><figcaption>Montaditos de chorizo y huevo de codorniz</figcaption></figure><figure class="deck-card" data-i="2" aria-label="3 de 4: Montaditos de brocheta crujiente"><div class="deck-ph"><img src="img/brochetas-s.webp" srcset="img/brochetas-s.webp 560w, img/brochetas-l.webp 1080w" sizes="(min-width:900px) 300px, 68vw" width="1080" height="1440" alt="Montaditos de brocheta crujiente" decoding="async" style="background:#EEE7DE url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBACdASoPABQAPu1iqU2ppaOiMAgBMB2JbACdAdwA2GZFp5FfRP1ZEAD+QJtR7YZu5u/NpxBns+lhJLTZMtM5MMUuwSWgk33meB5UZi7xELDQ4FFW5lovbp+6aVdduEarZeWz5w0e6nmR2SFQLzXuSj2uY0X2MEbkmvRbwvu2535R4qSclFCfyZgQAA==) center/cover no-repeat"></div><figcaption>Montaditos de brocheta crujiente</figcaption></figure><figure class="deck-card" data-i="3" aria-label="4 de 4: Sándwich de huevo y queso"><div class="deck-ph"><img src="img/sandwich-huevo-s.webp" srcset="img/sandwich-huevo-s.webp 560w, img/sandwich-huevo-l.webp 1448w" sizes="(min-width:900px) 300px, 68vw" width="1448" height="1086" alt="Sándwich de huevo y queso" decoding="async" style="background:#EEE7DE url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBQCdASoUAA8APu1iqU2ppaOiMAgBMB2JbACdMoR3IsCrUW/+A23/dIo734KCuhwAAP5xbJ6hZkcIzrZDMTqWYyJtfakSBXz5mcj+37uKtsKKZvMJOBtTZQBarcTMfWNNWSnvOTNzeAz+bCHLR00zeMRJSXq6oBgmkupy9V7MrR7H351QTAfzdmTRkNhTNuHe/1jDJAsWbc/v5NiLIAAA) center/cover no-repeat"></div><figcaption>Sándwich de huevo y queso</figcaption></figure>
+      </div>
+      <div class="deck-ctrl" hidden>
+        <button class="deck-btn" type="button" data-dir="-1" aria-label="Pincho anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <p class="deck-count" aria-live="polite"><span class="deck-now">01</span> / 04</p>
+        <button class="deck-btn" type="button" data-dir="1" aria-label="Pincho siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="fan-foot"><a class="btn btn-primary" href="carta.html#compartir">Ver la carta</a></div>
+  </div>
+</section>
+</div>
+
+<section class="cafe" data-cafe aria-labelledby="t-cafe">
+  <div class="cafe-stage">
+   <div class="cafe-frame">
+    <div class="cafe-text"><svg class="motif icon-taza cafe-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M18 11h22v7a10 10 0 0 1-10 10h-2a10 10 0 0 1-10-10z"/><path pathLength="1" style="--d:200ms" d="M40 14h3a4 4 0 0 1 0 8h-4"/><path pathLength="1" style="--d:320ms" d="M12 30.5h34"/><path pathLength="1" style="--d:440ms" d="M25 7c-2-1.5 2-3 0-5.5M31 7c-2-1.5 2-3 0-5.5"/></g></svg><h2 class="display" id="t-cafe">Y un café que alarga el rato.</h2></div>
+    <div class="cafe-pic">
+      <img src="img/cafe-hero-l.webp" srcset="img/cafe-hero-s.webp 900w, img/cafe-hero-l.webp 1536w" sizes="(min-width:900px) 1100px, 160vw" width="1536" height="1024" alt="Taza de café con leche y un corazón dibujado en la espuma" loading="lazy" decoding="async" style="background:#EEE7DE url(data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdMoADTpl/wJn2zWWgAAD+7ViZtRbyKk/yeAaF3eQWkhZL9D0c0NI8r+1nGkAAAA==) center/cover no-repeat">
+      <svg class="cafe-fx" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="milk" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#FBF5EA"/><stop offset="1" stop-color="#E4D6C1"/></radialGradient>
+          <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6B4A2B" flood-opacity=".28"/></filter>
+          <radialGradient id="spotg"><stop offset="0" stop-color="#FFF8EC" stop-opacity=".9"/><stop offset=".6" stop-color="#FFF8EC" stop-opacity=".35"/><stop offset="1" stop-color="#FFF8EC" stop-opacity="0"/></radialGradient>
+          <clipPath id="surface"><ellipse cx="757" cy="503" rx="240" ry="120"/></clipPath>
+        </defs>
+        <g clip-path="url(#surface)">
+          <ellipse class="fx-spot" cx="760" cy="506" rx="0" ry="0" fill="url(#spotg)" opacity="0"/>
+          <ellipse class="fx-ring" cx="760" cy="506" rx="0" ry="0" fill="none" stroke="#FFF9EE" stroke-width="3" opacity="0"/>
+          <ellipse class="fx-ring" cx="760" cy="506" rx="0" ry="0" fill="none" stroke="#FFF9EE" stroke-width="2" opacity="0"/>
+        </g>
+        <g class="fx-crown" filter="url(#soft)" opacity="0">
+          <path class="fx-back" d="" fill="#E9DCC8"/>
+          <path class="fx-front" d="" fill="url(#milk)"/>
+          <g class="fx-tips"></g>
+        </g>
+        <g class="fx-drops" filter="url(#soft)"></g>
+        <path class="fx-drop" d="M0,-34 C7,-18 15,-6 15,6 A15,15 0 0 1 -15,6 C-15,-6 -7,-18 0,-34 Z" fill="url(#milk)" filter="url(#soft)" opacity="0"/>
+      </svg>
+    </div>
+   </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="ribbon-track"><div class="rb-group"><span>Pincho</span><span class="rb-star">✦</span><span>Mesa</span><span class="rb-star">✦</span><span>Terraza</span><span class="rb-star">✦</span><span>Logroño</span><span class="rb-star">✦</span><span>Barra</span><span class="rb-star">✦</span><span>Otro rato</span><span class="rb-star">✦</span><span>Pincho</span><span class="rb-star">✦</span><span>Mesa</span><span class="rb-star">✦</span><span>Terraza</span><span class="rb-star">✦</span><span>Logroño</span><span class="rb-star">✦</span><span>Barra</span><span class="rb-star">✦</span><span>Otro rato</span><span class="rb-star">✦</span></div><div class="rb-group"><span>Pincho</span><span class="rb-star">✦</span><span>Mesa</span><span class="rb-star">✦</span><span>Terraza</span><span class="rb-star">✦</span><span>Logroño</span><span class="rb-star">✦</span><span>Barra</span><span class="rb-star">✦</span><span>Otro rato</span><span class="rb-star">✦</span><span>Pincho</span><span class="rb-star">✦</span><span>Mesa</span><span class="rb-star">✦</span><span>Terraza</span><span class="rb-star">✦</span><span>Logroño</span><span class="rb-star">✦</span><span>Barra</span><span class="rb-star">✦</span><span>Otro rato</span><span class="rb-star">✦</span></div></div></div>
+
+<section class="spaces forest" aria-labelledby="t-spaces">
+  <div class="wrap">
+    <div class="spaces-head">
+      <div class="sep sep-left" aria-hidden="true"><span></span><svg class="motif " viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg><span></span></div>
+      <p class="eyebrow">Barra · Mesa · Terraza</p>
+      <h2 class="display h-l" id="t-spaces">Cada rato tiene su sitio.</h2>
+    </div>
+    <ol class="ly-list"><li class="ly-item"><div class="frame"><img src="img/barra-l.webp" srcset="img/barra-s.webp 760w, img/barra-l.webp 1600w" sizes="(min-width:900px) 58vw, 100vw" width="1600" height="800" alt="Barra de Sabroso con cafetera, vinoteca y botellero bajo luz violeta" loading="lazy" decoding="async" style="object-position:50% 50%;background:#EEE7DE url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoUAAoAPu1iqk2ppaQiMAgBMB2JQBOgA6P/MvWAaV5EAAD+zFjMjvo/GhVKAh2Qt0nVHJcIjOTreb07BXDwN3hg/UT6mI+3TJTAKX5fSWGOGHGUbXNLFn4qXJlw8K6xn0FnMAAA) center/cover no-repeat"></div><div class="ly-tx"><svg class="motif icon-pincho ly-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg><p class="eyebrow">Barra</p><h3 class="display">El primer pincho, aquí.</h3><p class="body">Para empezar, la barra.</p></div></li><li class="ly-item"><div class="frame"><img src="img/mesa-grupo-l.webp" srcset="img/mesa-grupo-s.webp 760w, img/mesa-grupo-l.webp 1150w" sizes="(min-width:900px) 58vw, 100vw" width="1150" height="976" alt="Comedor de Sabroso con mesas largas montadas" loading="lazy" decoding="async" style="object-position:50% 50%;background:#EEE7DE url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoUABEAPu1sq1EppaOiqAqpMB2JQBWAAZ0GKPESxJ+tFd3lTfo3vrAA/j3cOUTYXx+gze4mFEmCVLvcFKcYbGg0FeF1LgpP4phg74MYaaog4t3+ceb1NcYt9IJlt64+s58zMjkh88eaEYljlcbAonIBWsGHyZc1Od2tFnyh2p2gGkhrYtIDvndzPUOnZAKAu2dQAA==) center/cover no-repeat"></div><div class="ly-tx"><svg class="motif icon-mesa ly-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M16 14h32"/><path pathLength="1" style="--d:200ms" d="M22 14v16M42 14v16"/><path pathLength="1" style="--d:340ms" d="M8 6v24M8 21h7v9"/><path pathLength="1" style="--d:420ms" d="M56 6v24M56 21h-7v9"/><path pathLength="1" style="--d:520ms" d="M28 10c0-3 2-4 4-4s4 1 4 4"/></g></svg><p class="eyebrow">Mesa</p><h3 class="display">Las mejores conversaciones se alargan.</h3><p class="body">Mesas que se juntan para comer en grupo.</p></div></li><li class="ly-item"><div class="frame"><img src="img/terraza-l.webp" srcset="img/terraza-s.webp 760w, img/terraza-l.webp 1600w" sizes="(min-width:900px) 58vw, 100vw" width="1600" height="900" alt="Terraza de Sabroso bajo el toldo, junto al parque en otoño" loading="lazy" decoding="async" style="object-position:40% 62%;background:#EEE7DE url(data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOgBFKqKdP+Zass0npH4ADJYQQ5VMb30sFPN3sMjhB+Qw9AOcGCOC5D0+71Uy3EsVArG042g6K5iBGBt3Zx3cOfKLPY+vlr7Im4V2t+1QNfnAdDC2aQ8UbEbjKYkgAAAA==) center/cover no-repeat"></div><div class="ly-tx"><svg class="motif icon-toldo ly-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M8 5h48v6c-3 4-9 4-12 0c-3 4-9 4-12 0c-3 4-9 4-12 0c-3 4-9 4-12 0z"/><path pathLength="1" style="--d:260ms" d="M10 11v19M54 11v19"/><path pathLength="1" style="--d:400ms" d="M24 23h16M28 23v7M36 23v7"/></g></svg><p class="eyebrow">Terraza</p><h3 class="display">Fuera también se está muy bien.</h3><p class="body">Junto al parque.</p></div></li></ol>
+  </div>
+  <div class="layers" data-layers aria-hidden="true">
+    <div class="ly-stage wrap">
+      <div class="ly-photos"><figure class="ly-ph" data-step="0"><img src="img/barra-l.webp" srcset="img/barra-s.webp 760w, img/barra-l.webp 1600w" sizes="(min-width:900px) 58vw, 100vw" width="1600" height="800" alt="Barra de Sabroso con cafetera, vinoteca y botellero bajo luz violeta" loading="lazy" decoding="async" style="object-position:50% 50%;background:#EEE7DE url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoUAAoAPu1iqk2ppaQiMAgBMB2JQBOgA6P/MvWAaV5EAAD+zFjMjvo/GhVKAh2Qt0nVHJcIjOTreb07BXDwN3hg/UT6mI+3TJTAKX5fSWGOGHGUbXNLFn4qXJlw8K6xn0FnMAAA) center/cover no-repeat"></figure><figure class="ly-ph" data-step="1"><img src="img/mesa-grupo-l.webp" srcset="img/mesa-grupo-s.webp 760w, img/mesa-grupo-l.webp 1150w" sizes="(min-width:900px) 58vw, 100vw" width="1150" height="976" alt="Comedor de Sabroso con mesas largas montadas" loading="lazy" decoding="async" style="object-position:50% 50%;background:#EEE7DE url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoUABEAPu1sq1EppaOiqAqpMB2JQBWAAZ0GKPESxJ+tFd3lTfo3vrAA/j3cOUTYXx+gze4mFEmCVLvcFKcYbGg0FeF1LgpP4phg74MYaaog4t3+ceb1NcYt9IJlt64+s58zMjkh88eaEYljlcbAonIBWsGHyZc1Od2tFnyh2p2gGkhrYtIDvndzPUOnZAKAu2dQAA==) center/cover no-repeat"></figure><figure class="ly-ph" data-step="2"><img src="img/terraza-l.webp" srcset="img/terraza-s.webp 760w, img/terraza-l.webp 1600w" sizes="(min-width:900px) 58vw, 100vw" width="1600" height="900" alt="Terraza de Sabroso bajo el toldo, junto al parque en otoño" loading="lazy" decoding="async" style="object-position:40% 62%;background:#EEE7DE url(data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOgBFKqKdP+Zass0npH4ADJYQQ5VMb30sFPN3sMjhB+Qw9AOcGCOC5D0+71Uy3EsVArG042g6K5iBGBt3Zx3cOfKLPY+vlr7Im4V2t+1QNfnAdDC2aQ8UbEbjKYkgAAAA==) center/cover no-repeat"></figure></div>
+      <div class="ly-texts"><div class="ly-tx" data-step="0"><svg class="motif icon-pincho ly-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg><p class="eyebrow">Barra</p><h3 class="display">El primer pincho, aquí.</h3><p class="body">Para empezar, la barra.</p></div><div class="ly-tx" data-step="1"><svg class="motif icon-mesa ly-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M16 14h32"/><path pathLength="1" style="--d:200ms" d="M22 14v16M42 14v16"/><path pathLength="1" style="--d:340ms" d="M8 6v24M8 21h7v9"/><path pathLength="1" style="--d:420ms" d="M56 6v24M56 21h-7v9"/><path pathLength="1" style="--d:520ms" d="M28 10c0-3 2-4 4-4s4 1 4 4"/></g></svg><p class="eyebrow">Mesa</p><h3 class="display">Las mejores conversaciones se alargan.</h3><p class="body">Mesas que se juntan para comer en grupo.</p></div><div class="ly-tx" data-step="2"><svg class="motif icon-toldo ly-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M8 5h48v6c-3 4-9 4-12 0c-3 4-9 4-12 0c-3 4-9 4-12 0c-3 4-9 4-12 0z"/><path pathLength="1" style="--d:260ms" d="M10 11v19M54 11v19"/><path pathLength="1" style="--d:400ms" d="M24 23h16M28 23v7M36 23v7"/></g></svg><p class="eyebrow">Terraza</p><h3 class="display">Fuera también se está muy bien.</h3><p class="body">Junto al parque.</p></div></div>
+      <div class="ly-dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="seguir section on-ivory" aria-labelledby="t-seguir">
+  <div class="wrap">
+    <div class="head-row seguir-head">
+      <div><div class="sep sep-left" aria-hidden="true"><span></span><svg class="motif " viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg><span></span></div><h2 class="display h-l" id="t-seguir">Y para seguir…</h2></div>
+      <p class="aside">La carta, en tres partes. Elige por dónde empezar.</p>
+    </div>
+    <ul class="cats"><li><a class="cat-card" href="carta.html#compartir"><span class="cat-meta"><span class="cat-num">01</span><span class="cat-name">Para compartir</span><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6"/></svg></span></span><span class="cat-sub">Tostas, montaditos y brochetas</span></a></li><li><a class="cat-card" href="carta.html#platos"><span class="cat-meta"><span class="cat-num">02</span><span class="cat-name">Nuestros platos</span><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6"/></svg></span></span><span class="cat-sub">Pulpo, verduras, ensalada y guiso</span></a></li><li><a class="cat-card" href="carta.html#barra"><span class="cat-meta"><span class="cat-num">03</span><span class="cat-name">De barra</span><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6"/></svg></span></span><span class="cat-sub">Sándwiches y café</span></a></li></ul>
+  </div>
+</section>
+
+<section class="finale" aria-labelledby="t-fin">
+  <div class="wrap">
+    <svg class="motif fin-motif" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" style="--d:0ms" d="M14 27h30a4 4 0 0 0 4-4v0a4 4 0 0 0-4-4H14a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4z"/><path pathLength="1" style="--d:220ms" d="M11 18.5c2.2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6c2-3.4 4.8-3.4 6.8-.6"/><path pathLength="1" style="--d:440ms" d="M33 30L41 4"/><circle pathLength="1" style="--d:560ms" cx="41.8" cy="2.6" r="1.2"/></g></svg>
+    <h2 class="fin-title display" id="t-fin" data-lines><span class="line"><span>¿Nos</span></span><span class="line"><span>vemos?</span></span></h2>
+    <div class="meta">
+      <p>C. Duques de Nájera, 109<br>Logroño · <a class="tel" href="tel:+34941641420">941 64 14 20</a></p>
+      <div class="actions">
+        <a class="btn btn-primary" href="reservas.html">Reservar mesa</a>
+        <a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=Bar-Restaurante+Sabroso+Calle+Duques+de+N%C3%A1jera+109+Logro%C3%B1o" target="_blank" rel="noopener">Cómo llegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="index.html">SABROSO</a>
+      
+    </div>
+    <ul aria-label="La web"><li><a href="carta.html">Carta</a></li><li><a href="restaurante.html">El restaurante</a></li><li><a href="grupos.html">Grupos</a></li><li><a href="reservas.html">Reservas</a></li></ul>
+    <p class="open-now" data-hours='{}' hidden></p>
+    <p class="legal"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · Propuesta de diseño de CRS Digital.</p>
+  </div>
+</footer>
+<nav class="dock" aria-label="Accesos rápidos">
+  <a class="btn btn-ghost" href="carta.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M7 11v10M17 3c-2 0-3 2.5-3 6s1 4 3 4v8"/></svg>Carta</a>
+  <a class="btn btn-primary" href="reservas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar</a>
+</nav>
+<script defer src="deck.js"></script><script defer src="cafe.js"></script>
+</body>
+</html>
