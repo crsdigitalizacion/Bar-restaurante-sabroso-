@@ -1122,3 +1122,25 @@ html.has-js .deck{overflow:hidden;margin-inline:calc(var(--gutter) * -1) calc(va
 .deck.js .deck-card{transition:transform .65s cubic-bezier(.22,1,.36,1),opacity .4s ease;transform-style:preserve-3d}
 .deck.js .deck-card:not(.is-active) .deck-ph img{filter:brightness(.9)}
 .deck.js .deck-card .deck-ph img{transition:filter .5s ease}
+
+/* Menú sin fotos: a la derecha, datos útiles */
+.sm-photo{display:none!important}
+.sm-foot{flex-wrap:wrap;align-items:flex-start;column-gap:16px;row-gap:6px}
+.sm-foot .motif{flex:0 0 100%;width:56px}
+.sm-addr,.sm-tel{margin:0}
+.sm-tel a{font-family:var(--f-display);font-size:1.3rem;text-decoration:none;color:var(--ivory)}
+.sm-cta{display:none}
+@media (min-width:900px){
+  .sm-body{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);grid-template-rows:1fr}
+  .sm-foot{grid-column:2;grid-row:1;align-self:center;flex-direction:column;align-items:flex-start;gap:14px;padding-left:clamp(28px,4vw,56px);border-left:1px solid rgba(247,243,237,.14)}
+  .sm-foot .motif{width:84px;height:42px;flex:none}
+  .sm-addr{font-family:var(--f-display);font-size:1.6rem;line-height:1.25;color:var(--ivory)}
+  .sm-tel a{font-size:2rem;letter-spacing:-.01em}
+  .sm-cta{display:inline-flex;margin-top:10px}
+}
+
+/* Carta en ordenador: arreglo de las filas (nombre y descripción a todo el ancho) */
+@media (min-width:960px){
+  .c-btn,.c-row.is-feat .c-btn{grid-template-columns:34px minmax(0,1fr);gap:0}
+  .c-thumb{display:none!important}
+}
