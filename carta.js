@@ -63,6 +63,7 @@
   var io = null;
   function watch() {
     if (io) { io.disconnect(); io = null; }
+    return;   /* la foto ya no cambia sola con el scroll */
     if (!wide.matches || !("IntersectionObserver" in window)) return;
     io = new IntersectionObserver(function (entries) {
       if (hovering) return;
@@ -75,15 +76,41 @@
   var hovering = false;
   rows.forEach(function (r) {
     var btn = r.querySelector(".c-btn");
-    r.addEventListener("pointerenter", function () { if (wide.matches && fine.matches) { hovering = true; show(r); } });
+    /* (sin cambio de foto al pasar el ratón) */
     r.addEventListener("pointerleave", function () { hovering = false; });
-    btn.addEventListener("focus", function () { if (wide.matches) show(r, true); });
+
     btn.addEventListener("click", function () {
-      if (wide.matches) { show(r); return; }
+      if (wide.matches) { openBig(r); return; }
       if (r.classList.contains("is-feat")) return;   /* su foto ya está encima */
       toggle(r);
     });
   });
+
+  /* ---------- Foto grande y entera al pulsar (ordenador) ---------- */
+  var big = document.createElement("dialog");
+  big.className = "c-big";
+  big.setAttribute("aria-label", "Foto del plato");
+  big.innerHTML = '<button class="c-big-close" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><figure><img alt=""><figcaption><span class="c-big-cat"></span><span class="c-big-name"></span><span class="c-big-desc"></span></figcaption></figure>';
+  document.body.appendChild(big);
+  var bigImg = big.querySelector("img");
+  function openBig(row) {
+    bigImg.removeAttribute("src");
+    if (row.dataset.lq) bigImg.style.background = "#EEE7DE url(" + row.dataset.lq + ") center/contain no-repeat";
+    bigImg.sizes = "(min-width:1200px) 1000px, 80vw";
+    bigImg.srcset = row.dataset.srcset; bigImg.src = row.dataset.src; bigImg.alt = row.dataset.alt;
+    big.querySelector(".c-big-cat").textContent = catOf(row);
+    big.querySelector(".c-big-name").textContent = row.dataset.alt;
+    var d = row.querySelector(".c-desc"); big.querySelector(".c-big-desc").textContent = d ? d.textContent : "";
+    if (typeof big.showModal === "function") big.showModal(); else big.setAttribute("open", "");
+  }
+  function closeBig() {
+    if (!big.open) return;
+    if (reduce) { big.close(); return; }
+    big.classList.add("closing");
+    setTimeout(function () { big.classList.remove("closing"); big.close(); }, 200);
+  }
+  big.addEventListener("click", function (e) { if (e.target === big || e.target.closest(".c-big-close")) closeBig(); });
+  big.addEventListener("cancel", function (e) { e.preventDefault(); closeBig(); });
 
   /* ---------- Desplegar la foto (móvil) ---------- */
   function toggle(row) {
